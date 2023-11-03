@@ -3,7 +3,7 @@ import os
 import tensorflow as tf
 from tensorflow import keras
 from PIL import Image
-import numpy as np
+import numpy as np 
 from sklearn.model_selection import train_test_split
 from keras.utils import normalize
 from keras.models import Sequential
@@ -11,10 +11,10 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Activation, Dropout, Flatten, Dense
 from keras.utils import to_categorical
 
-image_directory='datasets/'
+image_directory='.//datasets//'
 
-no_tumor_images=os.listdir(image_directory+ 'no/')
-yes_tumor_images=os.listdir(image_directory+ 'yes/')
+no_tumor_images=os.listdir(image_directory+ 'no//')
+yes_tumor_images=os.listdir(image_directory+ 'yes//')
 dataset=[]
 label=[]
 

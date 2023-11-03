@@ -29,7 +29,7 @@ def getResult(img):
     image = image.resize((64, 64))
     image=np.array(image)
     input_img = np.expand_dims(image, axis=0)
-    result=model.predict_classes(input_img)
+    result=model.predict_step(input_img)
     return result
 
 

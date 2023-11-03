@@ -5,7 +5,7 @@ import numpy as np
 
 model=load_model('BrainTumor10EpochsCategorical.h5')
 
-image=cv2.imread('.\\pred\\pred0.jpg')
+image=cv2.imread('.//pred//pred5.jpg')
 
 img=Image.fromarray(image)
 
@@ -15,7 +15,7 @@ img=np.array(img)
 
 input_img=np.expand_dims(img, axis=0)
 
-result=model.predict_classes(input_img)
+result=model.predict_step(input_img)
 print(result)
 
 
